@@ -1,29 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head> 
-  <title>Changing Background Color</title>
-</head> 
-<body>  
-  <h1>Change the Background Color</h1>
-  <label for="colortxt">Enter a color name or hex code</label>
-  <br>    
-  <input type="text" id="colortxt">
-  <button onclick="changecolor()">Change Background Color</button>  
-  <script>       
-  x=prompt("Enter your name");
-  alert("welcome" + x);
-  function changecolor()    
-  {          
-    var color = document.getElementById("colortxt").value;    
-    document.bgColor = color;      
-  }   
-  </script> 
-</body> 
-</html>
-<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>download testing page</title>
 	<style>
 		body{
@@ -31,9 +8,21 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+	 x=prompt("Enter your name");
+  alert("welcome" + x);
+  function changecolor()    
+  {          
+    var color = document.getElementById("colortxt").value;    
+    document.bgColor = color;      
+  }   
 	</style>
 </head>
 <body>
+	  <h1>Change the Background Color</h1>
+  <label for="colortxt">Enter a color name or hex code</label>
+  <br>    
+  <input type="text" id="colortxt">
+  <button onclick="changecolor()">Change Background Color</button>  
 	<h1>
 <marquee>welcome</marquee>
 </h1>
