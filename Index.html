@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FX Desk – live news and economic calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#e8ecf2; --panel:#ffffff; --rule:#cfd7e3;
+  --ink:#101c33; --muted:#5b6b86; --live:#f5a524;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  font:400 15px/1.5 "Schibsted Grotesk",system-ui,sans-serif;
+  background:var(--page);color:var(--ink);
+  display:flex;flex-direction:column;
+}
+header{
+  flex:none;height:56px;padding:0 20px;
+  background:var(--ink);color:#fff;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+header h1{margin:0;font-size:18px;font-weight:700}
+nav{display:flex;gap:20px}
+nav a{color:#c9d4e6;text-decoration:none;font-weight:600;font-size:14px}
+nav a:hover{color:#fff;text-decoration:underline}
+a:focus-visible{outline:2px solid var(--live);outline-offset:3px}
+
+main{
+  flex:1;min-height:0;padding:12px;gap:12px;
+  display:grid;grid-template-columns:minmax(320px,400px) 1fr;grid-template-rows:minmax(0,1fr);
+}
